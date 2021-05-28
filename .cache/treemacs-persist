@@ -1,0 +1,5 @@
+* Default
+** .emacs.d
+ - path :: ~/.emacs.d
+** x64dbg
+ - path :: d:/Projects/x64dbg
