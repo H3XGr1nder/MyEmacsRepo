@@ -13,7 +13,7 @@
  '(elpy-shell-echo-input nil)
  '(ivy-mode t)
  '(package-selected-packages
-   '(dracula-theme markdown-mode elpy treemacs-projectile treemacs projectile monokai-theme doom-themes solarized-theme ## ivy)))
+   '(dracula-theme markdown-mode elpy treemacs-projectile treemacs projectile monokai-theme ## ivy)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
