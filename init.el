@@ -13,7 +13,7 @@
  '(elpy-shell-echo-input nil)
  '(ivy-mode t)
  '(package-selected-packages
-   '(dracula-theme markdown-mode treemacs-projectile treemacs projectile monokai-theme ## ivy)))
+   '(dracula-theme markdown-mode treemacs-projectile treemacs projectile ## ivy)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -34,3 +34,6 @@
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
