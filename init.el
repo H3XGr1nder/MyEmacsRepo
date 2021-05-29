@@ -34,6 +34,3 @@
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
-(elpy-enable)
-(setq elpy-rpc-python-command "python")
-(setq elpy-rpc-virtualenv-path "C:/virtualenvs")
