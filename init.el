@@ -25,6 +25,7 @@
 (load-theme 'dracula t)
 (set-face-attribute 'default t :font "Bitstream Vera Sans Mono" )
 
+
 (global-set-key (kbd "C-M-/") 'help-command)
 (global-set-key "\C-h" 'delete-backward-char)
 (global-set-key (kbd "S-SPC") 'toggle-input-method)
@@ -35,4 +36,23 @@
 ;;(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
 ;;(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
 
-(setq c-default-style "linux" c-basic-offset 4)
+;;(setq c-default-style "linux"
+;;      c-basic-offset 4)
+
+;;(c-set-offset 'inline-open '0)
+
+(defun cc-default-style()
+  (c-set-style "linux")
+  (c-set-offset 'innamespace '0)
+  (c-set-offset 'inextern-lang '0)
+  (c-set-offset 'inline-open '0)
+  (c-set-offset 'label '*)
+  (c-set-offset 'case-label '*)
+  (c-set-offset 'access-label '/)
+  (setq c-basic-offset 4)
+  (setq tab-width 4)
+  (setq indent-tabs-mode nil)
+)
+
+(add-hook 'c++-mode-hook 'cc-default-style)
+
